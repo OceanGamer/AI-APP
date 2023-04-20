@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OceanAI</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link id="thememode" rel="stylesheet" href="css/darkmode.css">
+  </head>
+  <body>
+    <div class="toolbar">
+      <div class="navtop">
+        <img src="img/logo.png" alt="">
+        <h1>OceanAI</h1>
+      </div>
+      <hr>
+      <button id="clearchat"><img src="img/barriendo.png"><p>Limpiar Chat</p></button>
+      <button id="modetheme"><img src="img/sol.png"><p>Cambiar a Modo Luz</p></button>
+      <button id="web"><img src="img/enlace.png"><p>Ir a OceanAI Web</p></button>
+    </div>
+    <div class="chatbox">
+      <div class="presentation" id="presentation">
+        <img id="mainlogo" src="img/logo.png" alt="logo">
+        <h2>Te damos la bienvenida a OceanAI</h2>
+        <p>La tecnologia de ChatGPT en un solo lugar y sin necesidad de registrarte</p>
+      </div>
+      <div class="chat" id="chat">
+      </div>
+      <div class="input-text">
+        <textarea tabindex="0" rows="1" id="textinput" placeholder="Envia un mensaje"></textarea>
+        <button id="sendbtn"></button>
+       </div>
+       <button class="floatbtn" id="reload"><img src="img/reload.png">Volver a generar la respuesta</button>
+       <button class="floatbtn" id="stop"><img src="img/stop-button.png">Dejar de responder</button>
+    </div>
+  
+    <script src="script.js"></script>
+   </body>
+</html>

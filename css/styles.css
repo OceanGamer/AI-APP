@@ -1,0 +1,306 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    padding-top: 0;
+    margin: 0;
+    display: flex;
+}
+
+
+.chat{
+    height: 85vh;
+    font-size: small;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    padding-bottom: 100px;
+    box-sizing: border-box;
+}
+.chatbox{
+    height: 100vh;
+    width: 100%;
+}
+
+.toolbar{
+    box-sizing: border-box;
+    width: 200px;
+    padding: 2px;
+}
+
+.toolbar button{
+    border: 0;
+    transition: 0.2s;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    margin-top: 10px;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 5px;
+    height: 40px;
+}
+
+.toolbar button>p{
+    margin: 0;
+}
+
+.toolbar button>img{
+    width: 12px;
+    height: 12px;
+    margin: 2px;
+}
+
+.navtop{
+    display: flex;
+}
+
+.navtop img{
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}
+
+.navtop h1{
+    font-size: 25px;
+    margin: 5px;
+}
+
+.input-text{
+    border-radius: 5px;
+    box-shadow: 1px 6px 5px 3px rgba(0,0,0,0.1);
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    overflow: hidden;
+    width: 50%;
+}
+.input-text button{
+    background-color: rgba(0, 0, 0, 0);
+    background-position: center;
+    background-size: 15px;
+    background-repeat: no-repeat;
+    border: 0;
+    transition: 0.2s;
+    width: 40px;
+}
+
+.input-text textarea{
+    border: 0;
+    width: 100%;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight:bold;
+    max-height: 10vh;
+    overflow: hidden;
+    resize: none;
+}
+
+.input-text textarea:focus{
+    border: 0;
+    outline: none;
+    font-weight:normal;
+}
+
+
+.presentation{
+    margin-top: 5vh;
+    text-align: center;
+    height: 80vh;
+}
+
+.presentation img{
+    height: 80px;
+    width: 80px;
+}
+
+.presentation h2{
+    font-weight: bolder;
+}
+
+
+.usermensaje{
+    display: flex;
+    padding: 5px;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+.usermensaje div{
+    background-image: url(../img/user.png);
+    background-position: 0%;
+    background-size: cover;
+    border-radius: 2px;
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.usermensaje p{
+    width: 90%;
+}
+
+.botmensaje{
+    display: flex;
+    padding: 5px;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+.botmensaje div{
+    background-image: url(../img/bot.png);
+    background-position: 0%;
+    background-size: cover;
+    border-radius: 2px;
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.botmensaje p{
+    width: 90%;
+}
+
+.errmensaje{
+    display: flex;
+    padding: 5px;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+.errmensaje div{
+    background-image: url(../img/error.png);
+    background-position: 0%;
+    background-size: cover;
+    border-radius: 2px;
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.errmensaje p{
+    width: 90%;
+}
+
+.loadingmensaje{
+    display: flex;
+    padding: 5px;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+.loadingmensaje div{
+    background-image: url(../img/loading.gif);
+    background-position: 0%;
+    background-size: cover;
+    border-radius: 2px;
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.loadingmensaje p{
+    width: 60%;
+}
+
+
+.floatbtn{
+    outline: none;
+    transition: 0.2s;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    margin-top: 10px;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 5px;
+    height: 40px;
+    width: 200px;
+    justify-content: center;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -100px);
+    right: 50%;
+    box-shadow: 1px 6px 5px 3px rgba(0,0,0,0.1);
+}
+
+.floatbtn img{
+    width: 12px;
+    height: 12px;
+    margin: 2px;
+}
+
+.floatingbtn{
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(32, 33, 35);
+    border: 0;
+    z-index: +2;
+}
+
+.floatingbtn:hover{
+    background-color: rgb(43, 44, 47);
+}
+
+.floatingbtn img {
+    width: 100%;
+    height: 80%;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .input-text {
+    width: 70%;
+    }
+    .botmensaje{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .usermensaje{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .errmensaje{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .loadingmensaje{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+    
+@media screen and (max-width: 600px) {
+    .toolbar{
+        background-color: rgb(32, 33, 35);
+        height: 100vh;
+        z-index: +1;
+        width: 40px;
+    }
+
+    .toolbar button>p{
+        display: none;
+    }
+
+    .toolbar button>img{
+        width: 80%;
+        height: 80%;
+    }
+
+    .navtop{
+        justify-content: center;
+    }
+
+    .navtop h1{
+        display: none;
+    }
+    .input-text {
+        width: 90%;
+    }
+}
+

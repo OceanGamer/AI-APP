@@ -1,0 +1,33 @@
+{
+  "name": "oceanai",
+  "version": "1.0.0",
+  "description": "ai for free",
+  "main": "main.js",
+  "scripts": {
+    "pack": "electron-builder --dir",
+    "dist:win": "electron-builder --win",
+    "dist:mac": "electron-builder --mac",
+    "dist:linux": "electron-builder --linux"
+  },
+  "build": {
+    "win": {
+      "icon": "logo.ico"
+    }
+  },
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "Cesar Galindo",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^24.1.2",
+    "electron-builder": "^23.6.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

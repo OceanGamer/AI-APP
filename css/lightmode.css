@@ -1,0 +1,79 @@
+body{
+    background-color: rgb(32, 33, 35);
+    color: black;
+}
+
+.chatbox{
+    background-color: rgb(255, 255, 255)
+}
+.toolbar{
+    color: white;
+}
+.toolbar button{
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+}
+
+.toolbar button:hover{
+    background-color: rgb(43, 44, 47);
+}
+
+.input-text{
+    background-color: rgb(255, 255, 255);
+}
+.input-text button{
+    background-image: url('../img/send\ dark.png');
+}
+.input-text button:hover{
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.input-text button:active{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.input-text textarea{
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.input-text textarea:focus{
+    color: rgb(0, 0, 0);
+}
+
+
+.presentation{
+    color: rgb(0, 0, 0);
+}
+
+.botmensaje{
+    background-color: rgb(247, 247, 248);
+}
+
+.errmensaje{
+    background-color: rgb(247, 247, 248);
+}
+
+.errmensaje button{
+    color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.errmensaje button:hover{
+    background-color: rgba(0, 0, 0, 0.25);
+}
+.errmensaje button:active{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.loadingmensaje{
+    background-color: rgb(247, 247, 248);
+}
+
+.floatbtn{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(212, 212, 216);
+    color: rgb(0, 0, 0);
+}
+
+.floatbtn:hover{
+    background-color: rgb(236, 236, 241);
+}
